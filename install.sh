@@ -1,5 +1,4 @@
 #!/bin/sh
-set -e
 
 BIN_DIR="$HOME/bin"
 BIN_NAME="goi"
@@ -9,9 +8,12 @@ mkdir -p "$BIN_DIR"
 curl -fsSL "$URL" -o "$BIN_DIR/$BIN_NAME"
 chmod +x "$BIN_DIR/$BIN_NAME"
 
-grep -q 'export PATH="$HOME/bin:$PATH"' "$HOME/.zshrc" 2>/dev/null || echo 'export PATH="$HOME/bin:$PATH"' >> "$HOME/.zshrc"
-source "$HOME/.zshrc"
+if ! grep -q 'export PATH="$HOME/bin:$PATH"' "$HOME/.zshrc" 2>/dev/null; then
+    echo 'export PATH="$HOME/bin:$PATH"' >> "$HOME/.zshrc"
+fi
+
+export PATH="$HOME/bin:$PATH"
 
 echo "Installed: $BIN_DIR/$BIN_NAME"
 echo ""
-echo "Usage: ${BINARY_NAME}"
+echo "Usage: goi"
