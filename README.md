@@ -6,11 +6,7 @@
 
 ### From Download (macOS/arm64)
 ```bash
-curl -LO https://github.com/thefactlab-org/goi/releases/latest/download/goi_darwin_arm64
-```
-or
-```bash
-curl -sSL https://raw.githubusercontent.com/thefactlab-org/goi/main/download/goi_darwin_arm64 -o goi
+curl -fsSL https://raw.githubusercontent.com/nidz-the-fact/goi/main/install.sh | sh
 ```
 
 ### Add to PATH (choose one)
@@ -19,7 +15,7 @@ curl -sSL https://raw.githubusercontent.com/thefactlab-org/goi/main/download/goi
 cp target/release/goi /usr/local/bin/
 ```
 
-**Or** add an alias in `~/.zshrc` or `~/.bashrc`:
+**Or** add an alias in `source ~/.zshrc` or `~/.bashrc`:
 ```bash
 alias goi='/path/to/goi/target/release/goi'
 ```
