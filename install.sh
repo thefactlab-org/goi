@@ -16,4 +16,5 @@ export PATH="$HOME/bin:$PATH"
 
 echo "Installed: $BIN_DIR/$BIN_NAME"
 echo ""
+echo "👉 Please run: source ~/.zshrc"
 echo "Usage: goi"
