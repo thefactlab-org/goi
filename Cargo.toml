@@ -1,0 +1,14 @@
+[package]
+name = "goi"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+colored = "2.1"
+
+[dev-dependencies]
+criterion = "0.5"
+
+[[bench]]
+name = "benchmark"
+harness = false
