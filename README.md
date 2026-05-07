@@ -6,7 +6,7 @@
 
 ### From Download (macOS/arm64)
 ```bash
-curl -fsSL https://raw.githubusercontent.com/nidz-the-fact/goi/main/install.sh | sh
+curl -sSL https://raw.githubusercontent.com/thefactlab-org/goi/main/install.sh | sh
 ```
 
 ### Add to PATH (choose one)

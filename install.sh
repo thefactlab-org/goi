@@ -3,7 +3,7 @@ set -e
 
 BIN_DIR="$HOME/bin"
 BIN_NAME="goi"
-URL="https://github.com/nidz-the-fact/goi/releases/download/v0.1.0/goi_darwin_arm64"
+URL="https://github.com/thefactlab-org/goi/releases/download/v0.1.0/goi_darwin_arm64"
 
 mkdir -p "$BIN_DIR"
 curl -fsSL "$URL" -o "$BIN_DIR/$BIN_NAME"
